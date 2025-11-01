@@ -1,5 +1,5 @@
 'use client';
 
-function DefaultModal() {
+export default function DefaultModal() {
   return null;
 }
