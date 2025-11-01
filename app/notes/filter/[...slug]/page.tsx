@@ -3,7 +3,7 @@ import { NOTES_QUERY_KEY, fetchNotesByTag } from "@/lib/api";
 import NotesClient from "./Notes.client";
 
 interface FilteredNotesPageProps {
-  params: Promise<{ slug?: string[]; }> | { slug?: string[] };
+  params: Promise<{ slug: string[] }>;
 }
 
 export default async function FilteredNotesPage({ params }: FilteredNotesPageProps) {
