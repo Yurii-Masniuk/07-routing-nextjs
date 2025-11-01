@@ -22,7 +22,7 @@ interface RawApiResponse {
   totalPages?: number;
 }
 
-function normalizeFetchResponse(
+export default function normalizeFetchResponse(
   resp: AxiosResponse<RawApiResponse>
 ): NormalizedNotesResponse {
   const {

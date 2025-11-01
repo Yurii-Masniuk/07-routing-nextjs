@@ -8,7 +8,8 @@ import Modal from "@/components/Modal/Modal";
 import NoteForm from "@/components/NoteForm/NoteForm";
 import useDebouncedValue from "@/hooks/useDebouncedValue";
 import { useQuery } from "@tanstack/react-query";
-import { fetchNotes, NormalizedNotesResponse } from "@/lib/api";
+import { NormalizedNotesResponse } from "@/lib/types";
+import { fetchNotes } from "@/lib/api";
 import styles from "../../NotesPage.module.css";
 
 interface NotesClientProps {
